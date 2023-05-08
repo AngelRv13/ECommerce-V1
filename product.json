@@ -1,0 +1,16 @@
+[
+    {
+    "productId": 1,
+    "name": "butterfinger",
+    "price":300,
+    "description": "the best butter",
+    "image": "/images/butterfinger.png"
+    },
+    {
+        "productId": 2,
+        "name": "snicker",
+        "price":300,
+        "description": "the best snicker",
+        "image": "/images/snicker.png"
+    }
+    ]
