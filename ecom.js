@@ -1,40 +1,27 @@
-let slidePosition = 0;
-const slides = document.getElementsByClassName('carousel__item');
-const totalSlides = slides.length;
+var i = 0;  // start point
+var images = [];
+var time = 2000;
 
-document.getElementById('carousel__button--next')
-.addEventListener("click",function() {
-moveToNextSlide();
-});
+images[0] ="/images/barritas.jpeg"
+images[1] = "/images/duvalin.jpeg"
+images[2] = "/images/chamoy-covered-gummy-bears.jpeg"
+images[3] = '/images/larosa.jpg'
 
-document.getElementById('carousel__button--prev')
-.addEventListener("click",function() {
-moveToPrevSlide();
-});
+function changeImg(){
+	document.slide.src = images[i];
 
-function updateSlidePosition() {
-    for (let slide of slides) {
-    slide.classList.remove('carousel__item--visible');
-    slide.classList.add('carousel__item--hidden');
-    }
-    slides[slidePosition].classList.add('carousel__item--visible');
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
 }
 
-
-function moveToNextSlide() {
-    if (slidePosition === totalSlides - 1) {
-        slidePosition = 0;
-    } else {
-        slidePosition++;
-    }
-    updateSlidePosition();
-}
-
-function moveToPrevSlide() {
-    if (slidePosition === 0) {
-        slidePosition = totalSlides - 1;
-    } else {
-        slidePosition--;
-    }
-    updateSlidePosition();
-}
+// Run function when page loads
+  window.onload=changeImg;
