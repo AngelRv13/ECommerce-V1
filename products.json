@@ -1,0 +1,107 @@
+[
+  {
+    "productId": 1,
+    "image": "/images/pelonmini.webp",
+    "name": "Pelon mini",
+    "price": "$5.00",
+    "description": "Tamrindo Original",
+    "button":"Add to cart"
+  },
+  {
+    "productId": 2,
+    "image": "/images/sour-punch.jpeg",
+    "name": "Que Chido Sour Patches",
+    "price": "$8.00",
+    "description": "Covered in chamoy and tajin",
+    "button":"Add to cart"
+  },
+
+  {
+    "productId": 3,
+    "image": "/images/pulparindo.jpeg",
+    "name": "Pulparindo",
+    "price": "$4.50",
+    "description": "Watermelon flavor",
+    "button":"Add to cart"
+  },
+  {
+    "productId": 4,
+    "image": "/images/larosa.jpg",
+    "name": "La Rosa",
+    "price": "$6.50",
+    "description": "Peanut Flavor Marizapan Style",
+    "button":"Add to cart"
+  },
+
+  {
+    "productId": 5,
+    "image": "/images/gansito.jpeg",
+    "name": "Gansito",
+    "price": "$4.50",
+    "description": "Chocolate snack cake",
+    "button":"Add to cart"
+  },
+
+  {
+    "productId": 6,
+    "image": "/images/duvalin.jpeg",
+    "name": "Duvalin",
+    "price": "$3.50",
+    "description": "Strawberry and vanilla icing",
+    "button":"Add to cart"
+  },
+
+  {
+    "productId": 7,
+    "image": "/images/chamoy-covered-gummy-bears.jpeg",
+    "name": "Que Chido Gummie Bears",
+    "price": "$10.50",
+    "description": "Covered in MangoChamoy and Tajin",
+    "button":"Add to cart"
+  },
+
+  {
+    "productId": 8,
+    "image": "/images/barritas.jpeg",
+    "name": "Barritas",
+    "price": "$2.50",
+    "description": "Strawberry flavor cookie",
+    "button":"Add to cart"
+  },
+
+  {
+    "productId": 9,
+    "image": "/images/108455_XXX_v1.jpeg",
+    "name": "Peach Rings",
+    "price": "$5.75",
+    "description": "Covered in Tajin",
+    "button":"Add to cart"
+  },
+
+  {
+    "productId": 10,
+    "image": "/images/nerds+pedacitos.jpeg",
+    "name": "Que Chido Nerds clusters",
+    "price": "$12.50",
+    "description": "Covered in Chamoy and Tajin",
+    "button":"Add to cart"
+  },
+
+  {
+    "productId": 11,
+    "image": "/images/gushers.avif",
+    "name": "Que Chido Gushers",
+    "price": "$13.50",
+    "description": "Covered in Mango Chamoy",
+    "button":"Add to cart"
+  },
+
+  {
+    "productId": 12,
+    "image": "/images/airheads.avif",
+    "name": "Que Chido Airheads",
+    "price": "$13.25",
+    "description": "Covered in Chamoy and tajin",
+    "button":"Add to cart"
+  }
+]

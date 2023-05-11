@@ -4,12 +4,38 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: rgb(253, 247, 237);
 
+}
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
 }
 
 main{
     flex: 1;
 
+}
+
+.button {
+  font-size:120%;
+  font-weight: bold;
+  background: #e9e379;
+  padding: 3%;
+  text-align: center;
+ 
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+}
+
+.button:hover, .button:focus, .button:active {
+  color: #d694d0;
+  box-shadow: 0 0 20px rgba(0,0,0 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 footer {
@@ -20,17 +46,11 @@ footer {
     width: 100%;
   }
   
-  
-  
-  
-  
-  
-  
-
 .logo{
-    height:100%;
+    height:78%;
     width:50%;
-    background-color:blanchedalmond;
+    margin-left: 1.5rem;
+    background-color:blanchedalmond;   
    
 }
 
@@ -38,11 +58,13 @@ footer {
 .navbar {
    display: flex;
    align-items: flex-end;
-   padding: 20px 80px;
-   justify-content: space-between;
+   padding: 40px 80px;
+   justify-content: space-evenly;
    background-color: #efe6f3;
    box-shadow: 0px 5px 15px;
 }
+
+
 
 .navbar li  {
 list-style: none;
@@ -61,18 +83,130 @@ padding: 0 20px;
 .navbar li a:hover {
     color: #088178;
 }
+/* H1 main */
 
+.main-text {
+  font-size: 250%;
+  font-weight: bold;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding:4%;
+  
+}
+.about-us {
+  font-size:170%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  text-align: center;
+  margin: 10%;
+
+
+}
+/*products*/
+
+.products img {
+  width: 50%;
+  display: block;
+
+}
+    
+.products {
+  margin: 50px 0;
+  padding: 0 80px;
+  display: grid;
+  /* makes grid 3 columns */
+  grid-template-columns: 1fr;
+  gap: 80px;
+ }
+
+ .products :hover{
+  background-color: #d5e9d4;
+ }
+ .product{
+  display: flex;
+  flex-direction: column;  
+   align-items: center;
+   padding:25px;
+   background-color: rgb(253, 247, 237);
+ }
+
+ .description {
+  font-size:130%;
+  font-family:'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+
+}
+.price{
+  font-size: 150%;
+}
+
+.name {
+  font-size: 150%;
+}
+.products div{
+  margin-bottom:40px ;
+  border:4px solid  #efe6f3;;
+  box-shadow: 0px 5px 15px;
+  
+}
+
+.contact {
+  height:130%;
+  width:80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right:1rem;
+  align-items:center;
+  background-color:rgb(253, 247, 237);
+}
+/* media query for lsasptops */
+ @media screen and (min-width: 768px) { 
+  .logo{
+    height: 100%;
+    width:25%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    transform: translateX(-50%);
+
+  } 
+ .navbar{
+   width:100;
+
+ }
+.navbar li a {
+  font-size: 160%;
+}
+
+
+.products {
+  display: grid;
+  /* makes grid 3 columns */
+  grid-template-columns: repeat(3,1fr);
+  gap: 80px;
+
+
+}
+
+
+
+
+
+ } 
 .footer {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     height: auto;
     max-height: 40%;
     background-color:#088178;
     display: flex;
     justify-content: space-between;
-    
-    flex-direction: row;
+     flex-direction: row;
   
   }
   
@@ -97,8 +231,8 @@ padding: 0 20px;
     resize: vertical;
   }
   input[type=submit] {
-    background-color: black;
-    color: white;
+    background-color: rgb(205, 200, 226);
+    color: rgb(247, 243, 243);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -114,14 +248,13 @@ padding: 0 20px;
     display: flex;
     overflow: hidden;
     
-   
-   
-  }
+ }
   
 .imagecontainer {
     display: flex;
     width: 100vw;
     height: 50vh;
+    justify-content: center;
 }
 
   .imageslide {
@@ -130,4 +263,34 @@ padding: 0 20px;
 
   }
 
+ body h1 {
+  text-align: center;
+
+}
  
+/* media q for desktop */
+@media screen and (min-width:1025px) {
+  .products {
+    display: grid;
+    /* makes grid 3 columns */
+    grid-template-columns:repeat(3,1fr);
+    gap: 80px;
+}
+/* .imagecontainer {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+ 
+} */
+.logo {
+    height:100%;
+    width:25%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    transform: translateX(-55%);
+
+   
+}
+
+}
